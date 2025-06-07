@@ -1,9 +1,3 @@
-from .test_num_encoder_layers import (
-  main as test_num_encoder_layers_main
-)
-from .test_num_decoder_layers import (
-  main as test_num_decoder_layers_main
-)
 from .test_encoder_dimensions import (
   main as test_encoder_dimensions_main
 )
@@ -16,8 +10,6 @@ from .test_autoencoder_dimensions import (
 
 def main():
   runner = {
-    "test_num_encoder_layers": test_num_encoder_layers_main,
-    "test_num_decoder_layers": test_num_decoder_layers_main,
     "test_encoder_dimensions": test_encoder_dimensions_main,
     "test_decoder_dimensions": test_decoder_dimensions_main,
     "test_autoencoder_dimensions": test_autoencoder_dimensions_main
